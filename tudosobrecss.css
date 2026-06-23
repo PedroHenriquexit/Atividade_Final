@@ -1,0 +1,86 @@
+|*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* sem o box ele vai alterar os codigos de padding ou margin */
+}
+
+width: 1200px; 
+/* largura */
+
+    margin: 0 auto ;
+    /* espaço externo, a distância entre ele e outro elemento da página */
+
+        padding: 10px 0;
+    /* padding a distancia entre os conteúdos */
+
+        display: flex;
+    /* display flex e uma forma de organizar a página de maneira fácil*/
+
+        justify-content: center;
+    /* Centralizar os elementos horizontalmente */
+
+        /* gap: 3rem; */
+    /* serve para criar um espaço entre os elementos dentro de um display flex */
+
+        list-style: none;
+    /* nenhum estilo na lista (ul ou ol) */
+
+        align-items: center;
+    /* alinha os itens na direção vertical 
+
+        height: 100%;
+    /* altura */
+
+        color: 
+    /* cor do texto de um elemento */
+
+        /* font: normal 600 15px "Montserrat"; */
+/* NORMAL = Estilo da fonte  /    600 = Espessura da Fonte   /   15px  Tamanho da fonte  / Montserrat família da fonte */
+
+        font-size: 15px;
+    /* Tamanho da fonte */
+
+        font-weight: 600;
+    /* Espessura da Fonte */
+    
+        transition: 0.6s;
+    /* e animção suave, quando uma propriedade muda / EX: Mudará a cor azul para vermelho */
+
+    /*  para deixar mais fácil utiliza o me-03 na (i class="fa-solid fa-magnifying-glass me-02") */
+
+        cursor: pointer;
+    /* o cursor do mouse vira uma mãozinha, indicando que o elemento pode ser clicado  */
+
+        background-color: #004A8D;
+    /* e a cor de fundo de um elemento */
+
+        padding: 10px 0;
+    /* padding a distancia entre os conteúdos */
+
+        padding: 0 !important;
+    /* padding a distancia entre os conteúdos */
+
+        background-color: rgba(0,0,0,0.8);
+    /* e a cor de fundo de um elemento */
+
+        display: flex !important;
+     /* display flex e uma forma de organizar a página de maneira fácil   /    !important = dá prioridade máxima a essa regra */
+
+         flex-direction: column;
+    /* Faz os itens ficar um embaixo do outro */
+
+        align-items: flex-start;
+    /* alinha os itens no inicio do eixo vertical */
+
+        justify-content: space-around;
+    /* distribui os itens na horizontal, deixando espaço ao redor de cada item */
+
+        text-align: left;
+    /* Alinhado dos dois lados (esquerda e direita) como em jornais e livros */
+
+        border-radius: 8px;
+    /* Serve para arredondar as bordas de um elemento */
+
+        text-transform: uppercase;
+    /* Muda a forma como o texto é exibido, deixando tudo em maiúculo=uppercase /  minúsculas=lowercase */
