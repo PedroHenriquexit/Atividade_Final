@@ -13,6 +13,12 @@
     <link rel="stylesheet" href="./css/stlye.css">
 </head>
 
+<style>
+    body {
+        height: 300vh;
+    }
+</style>
+
 <body>
     <!-- topo -->
     <header class="header">
@@ -52,12 +58,47 @@
         <!-- Menu -->
         <nav class="menu-nav">
             <ul>
-                <li>Cachorro</li>
-                <li>Gato</li>
+                <li class="dropdown-menu-pet">
+                    Cachorro
+
+                    <div class="submenu">
+                        <a href="#">Ração <span>›</span></a>
+                        <a href="#">Petiscos e Ossos <span>›</span></a>
+                        <a href="#">Tapetes, Fraldas e Banheiros <span>›</span></a>
+                        <a href="#">Farmácia <span>›</span></a>
+                        <a href="#">Brinquedos <span>›</span></a>
+                        <a href="#">Coleiras, Guias e Peitorais <span>›</span></a>
+                        <a href="#">Beleza e Limpeza <span>›</span></a>
+                        <a href="#">Camas e Cobertores <span>›</span></a>
+                        <a href="#">Casas e Tocas <span>›</span></a>
+                        <a href="#">Acessórios de Alimentação <span>›</span></a>
+                        <a href="#">Acessórios de Transporte <span>›</span></a>
+                        <a href="#">Portões, Grades e Escadas <span>›</span></a>
+                        <a href="#">Roupas <span>›</span></a>
+                    </div>
+                </li>
+
+                <li class="dropdown-menu-pet">
+                    Gato
+                    <div class="submenu">
+                        <a href="#">Ração <span>›</span></a>
+                        <a href="#">Petiscos<span>›</span></a>
+                        <a href="#">Medicamentos<span>›</span></a>
+                        <a href="#">Aranhadores e Brinquedos<span>›</span></a>
+                        <a href="#">Higiene e Limpeza<span>›</span></a>
+                        <a href="#">Adestramento e Comportamentos <span>›</span></a>
+                        <a href="#">Tocas e Caminhas<span>›</span></a>
+                        <a href="#">Transporte e Acessórios <span>›</span></a>
+                        <a href="#">Acessórios de Alimentação <span>›</span></a>
+                        <a href="#">Acessórios de Transporte <span>›</span></a>
+                        <a href="#">Portões, Grades e Escadas <span>›</span></a>
+                        <a href="#">Roupas <span>›</span></a>
+                    </div>
+                </li>
                 <li>Pássaro</li>
                 <li>Peixe</li>
                 <li>Outros Pets</li>
-                <li>Cupon</li>
+                <li>Cupom</li>
                 <li>Promoções</li>
                 <li>Suporte</li>
             </ul>
@@ -68,32 +109,27 @@
     <!-- conteudo -->
 
     <main>
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="10000">
                     <img src="./img/412bab3d-c866-4bcb-bca5-961702bccb7d.webp" class="d-block w-100" alt="...">
                 </div>
-                <div class="carousel-item">
-                    <img src="./img/Home_Desk_1900x390__ajuste_petzday-medicamentos_CRIACAO_2026_06.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/39517d96-8333-4923-86e8-ea25b0495346.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./img/d221eca1-989f-42c1-8626-a12ebbf39790.webp" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="..." class="d-block w-100" alt="...">
+                    <img src="./img/122349e2-65e5-4595-8dfc-355b9189e82e.webp" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
@@ -111,7 +147,9 @@
     </footer>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -73,14 +73,14 @@ width: 1200px;
         align-items: flex-start;
     /* alinha os itens no inicio do eixo vertical */
 
-        justify-content: space-around;
+        /* justify-content: space-around; */
     /* distribui os itens na horizontal, deixando espaço ao redor de cada item */
 
-        text-align: left;
+        /* text-align: left; */
     /* Alinhado dos dois lados (esquerda e direita) como em jornais e livros */
 
-        border-radius: 8px;
+        /* border-radius: 8px; */
     /* Serve para arredondar as bordas de um elemento */
 
-        text-transform: uppercase;
+        /* text-transform: uppercase; */
     /* Muda a forma como o texto é exibido, deixando tudo em maiúculo=uppercase /  minúsculas=lowercase */
