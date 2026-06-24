@@ -93,7 +93,7 @@
     width: 16px;
 }
 
-/* Dropdown Cachorro */
+/* Dropdown*/
 
 .menu-nav li {
     position: relative;
@@ -106,12 +106,13 @@
 .submenu {
     display: none;
     position: absolute;
+    top: 40px;
     left: 0;
     width: 320px;
     background: #fff;
     box-shadow: 0 4px 15px rgba(0,0,0,.15);
     border-radius: 5px;
-    z-index: 1000;
+    z-index: 9999;
 }
 
 .submenu a {
@@ -133,6 +134,10 @@
     font-size: 6px;
 }
 
-.dropdown-menu-pet:hover .submenu {
+.dropdown-menu-pet:hover > .submenu {
     display: block;
 }
+
+
+
+
