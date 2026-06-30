@@ -1,99 +1,99 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-            /* Parte Superior completa  */
-.header{
-    width:100%;
+/*==========================Parte Superior completa==========================  */
+.header {
+    width: 100%;
     margin: 0 auto;
-    background:#fff;
-    border-bottom:1px solid #adadad;
+    background: #fff;
+    border-bottom: 1px solid #adadad;
 }
 
-            /* Parte superior */
-.top-header{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:12px 40px;
+/* ==========================Parte superior========================== */
+.top-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
     gap: 2rem;
 }
 
-.logo img{
-    width:200px;
+.logo img {
+    width: 200px;
 }
 
-            /* Pesquisa */
-.Pesquisa{
+/* ==========================Pesquisa========================== */
+.Pesquisa {
     width: 600px;
-    max-width:700px;
-    height:52px;
-    border:1px solid #ddd;
-    border-radius:18px;
-    display:flex;
-    align-items:center;
-    padding:0 20px;
-    background:#fff;
+    max-width: 700px;
+    height: 52px;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background: #fff;
     gap: 4rem;
 }
 
-.Pesquisa{
-    color:#8c8c8c;
-    margin-right:10px;
+.Pesquisa {
+    color: #8c8c8c;
+    margin-right: 10px;
 }
 
-.Pesquisa input{
-    width:100%;
-    border:none;
-    outline:none;
-    font-size:16px;
+.Pesquisa input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
 }
 
-            /* Ícones */
-.icons{
-    display:flex;
-    align-items:center;
-    gap:22px;
-    color:#2d5daa;
+/* ==========================Ícones========================== */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    color: #2d5daa;
 }
 
 .icons i,
-.icons svg{
-    cursor:pointer;
+.icons svg {
+    cursor: pointer;
 }
 
-            /* Menu */
-.menu-nav{
-    padding:14px 0;
+/* ==========================Menu========================== */
+.menu-nav {
+    padding: 14px 0;
 }
 
-.menu-nav ul{
-    list-style:none;
-    display:flex;
-    justify-content:center;
-    gap:4rem;
+.menu-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
 }
 
-.menu-nav li{
-    font-size:18px;
-    font-weight:600;
-    cursor:pointer;
-    transition:.2s;
+.menu-nav li {
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
 }
 
-.menu-nav li:hover{
-    color:#2d5daa;
+.menu-nav li:hover {
+    color: #2d5daa;
 }
 
 
-.telefone{
+.telefone {
     width: 16px;
 }
 
-/* Dropdown*/
+/* ==========================Dropdown==========================*/
 
 .menu-nav li {
     position: relative;
@@ -110,7 +110,7 @@
     left: 0;
     width: 320px;
     background: #fff;
-    box-shadow: 0 4px 15px rgba(0,0,0,.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .15);
     border-radius: 5px;
     z-index: 9999;
 }
@@ -134,10 +134,61 @@
     font-size: 6px;
 }
 
-.dropdown-menu-pet:hover > .submenu {
+.dropdown-menu-pet:hover>.submenu {
     display: block;
 }
 
 
+/* ==========================MENU ITEM========================== */
 
+.menu-item{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    position: relative;
+}
 
+/* ==========================Ícone escondido inicialmente========================== */
+
+.pet-icon{
+    width:28px;
+    opacity:0;
+    transform: translateY(10px) scale(0.8);
+    transition: all .3s ease;
+}
+
+/* aparece no hover */
+
+.dropdown-menu-pet:hover .pet-icon{
+    opacity:1;
+    transform: translateY(0) scale(1);
+    animation: bounce .5s ease;
+}
+
+/* texto */
+
+.dropdown-menu-pet span{
+    transition:.2s;
+}
+
+.dropdown-menu-pet:hover span{
+    color:#2d5daa;
+}
+
+/* ==========================animação========================== */
+
+@keyframes bounce{
+    0%   { transform: translateY(10px) scale(0.8); }
+    50%  { transform: translateY(-6px) scale(1.1); }
+    100% { transform: translateY(0) scale(1); }
+}
+
+/* submenu continua funcionando igual */
+
+.submenu{
+    display:none;
+}
+
+.dropdown-menu-pet:hover .submenu{
+    display:block;
+}
