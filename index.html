@@ -13,12 +13,6 @@
     <link rel="stylesheet" href="./css/stlye.css">
 </head>
 
-<style>
-    body {
-        height: 500vh;
-    }
-</style>
-
 <body>
     <!-- topo -->
     <header class="header">
@@ -56,14 +50,18 @@
         </div>
 
         <!-- Menu -->
-        <nav class="menu-nav">
+        <nav class="navbar navbar-expand-sm navbar-light bg-white menu-nav">
+
+            <!--HAMBURGUER -->
+            <button class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
             <ul>
 
                 <li class="dropdown-menu-pet">
                     <div class="menu-item">
                         <img src="./img/cachorrooooooo.jpg" alt="" class="pet-icon">
-                        <div class="submenu">
-                        </div>
                         Cachorro
 
                         <div class="submenu">
@@ -81,13 +79,12 @@
                             <a href="#">Portões, Grades e Escadas <span>›</span></a>
                             <a href="#">Roupas <span>›</span></a>
                         </div>
+                    </div>
                 </li>
 
                 <li class="dropdown-menu-pet">
                     <div class="menu-item">
                         <img src="./img/gato.png" alt="" class="pet-icon">
-                        <div class="submenu">
-                        </div>
                         Gato
 
                         <div class="submenu">
@@ -104,70 +101,65 @@
                             <a href="#">Portões, Grades e Escadas <span>›</span></a>
                             <a href="#">Roupas <span>›</span></a>
                         </div>
+                    </div>
                 </li>
+
                 <li class="dropdown-menu-pet">
                     <div class="menu-item">
                         <img src="./img/pássaro.jpg" alt="" class="pet-icon">
-                        <div class="submenu">
-                        </div>
                         Pássaro
 
                         <div class="submenu">
                             <a href="#">Alimentação <span>›</span></a>
                             <a href="#">Gaiolas e Viveiros<span>›</span></a>
                             <a href="#">Acessórios<span>›</span></a>
-                            <a href="#">Aranhadores e Brinquedos<span>›</span></a>
                             <a href="#">Farmácia<span>›</span></a>
                         </div>
+                    </div>
                 </li>
 
                 <li class="dropdown-menu-pet">
                     <div class="menu-item">
                         <img src="./img/peixe.png" alt="" class="pet-icon">
-                        <div class="submenu">
-                        </div>
                         Peixe
 
                         <div class="submenu">
                             <a href="#">Alimentação <span>›</span></a>
-                            <a href="#">Equipamentos e Acessórios<span>›</span></a>
-                            <a href="#">Aquários e Beteiras<span>›</span></a>
+                            <a href="#">Equipamentos<span>›</span></a>
+                            <a href="#">Aquários<span>›</span></a>
                             <a href="#">Tratamento de Água<span>›</span></a>
                             <a href="#">Decoração<span>›</span></a>
                             <a href="#">Farmácia<span>›</span></a>
                         </div>
+                    </div>
                 </li>
 
                 <li class="dropdown-menu-pet">
                     <div class="menu-item">
                         <img src="./img/outrosanimais.jpg" alt="" class="pet-icon">
-                        <div class="submenu">
-                        </div>
                         Outros Pets
 
                         <div class="submenu">
-                            <a href="#">Coelhos <span>›</span></a>
-                            <a href="#">Hamster e Twister<span>›</span></a>
-                            <a href="#">Porquinho da Índia<span>›</span></a>
-                            <a href="#">Chinchilas<span>›</span></a>
-                            <a href="#">Gerbil<span>›</span></a>
-                            <a href="#">Furão<span>›</span></a>
-                            <a href="#">Tartarugas<span>›</span></a>
-                            <a href="#">Lagartos<span>›</span></a>
+                            <a href="#">Coelhos</a>
+                            <a href="#">Hamster</a>
+                            <a href="#">Porquinho da Índia</a>
+                            <a href="#">Chinchilas</a>
                         </div>
+                    </div>
                 </li>
 
                 <li class="dropdown-menu-pet">
-                    <img src="./img/cupom.png" alt="" class="pet-icon">
+                    <img src="./img/cupom.png" class="pet-icon">
                     Cupom
                 </li>
 
                 <li class="dropdown-menu-pet">
-                    <img src="./img/outlet.svg" alt="" class="pet-icon">
+                    <img src="./img/outlet.svg" class="pet-icon">
                     Promoções
                 </li>
+
                 <li class="dropdown-menu-pet">
-                    <img src="./img/user-check.svg" alt="" class="pet-icon">
+                    <img src="./img/user-check.svg" class="pet-icon">
                     Suporte
                 </li>
 
@@ -736,111 +728,112 @@
 
         <footer class="footer">
 
-    <div class="footer-container">
+            <div class="footer-container">
 
-        <!-- Logo -->
+                <!-- Logo -->
 
-        <div class="footer-col">
+                <div class="footer-col">
 
-            <img src="./img/PetKing.png" class="footer-logo" alt="">
+                    <img src="./img/PetKing.png" class="footer-logo" alt="">
 
-            <p>
-                A PetKing é o lugar perfeito para encontrar tudo o que o seu pet precisa com qualidade, carinho e os melhores preços.
-            </p>
+                    <p>
+                        A PetKing é o lugar perfeito para encontrar tudo o que o seu pet precisa com qualidade, carinho
+                        e os melhores preços.
+                    </p>
 
-            <div class="redes">
+                    <div class="redes">
 
-                <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-instagram"></i>
 
-                <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
 
-                <i class="fa-brands fa-whatsapp"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
 
-                <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </div>
+
+                </div>
+
+                <!-- Institucional -->
+
+                <div class="footer-col">
+
+                    <h3>Institucional</h3>
+
+                    <a href="#">Quem Somos</a>
+
+                    <a href="#">Nossas Lojas</a>
+
+                    <a href="#">Trabalhe Conosco</a>
+
+                    <a href="#">Política de Privacidade</a>
+
+                    <a href="#">Termos de Uso</a>
+
+                </div>
+
+                <!-- Atendimento -->
+
+                <div class="footer-col">
+
+                    <h3>Atendimento</h3>
+
+                    <a href="#">Central de Ajuda</a>
+
+                    <a href="#">Trocas e Devoluções</a>
+
+                    <a href="#">Meus Pedidos</a>
+
+                    <a href="#">Fale Conosco</a>
+
+                    <a href="#">FAQ</a>
+
+                </div>
+
+                <!-- Contato -->
+
+                <div class="footer-col">
+
+                    <h3>Contato</h3>
+
+                    <p><i class="fa-solid fa-phone"></i> (11) 4002-8922</p>
+
+                    <p><i class="fa-solid fa-envelope"></i> contato@petking.com</p>
+
+                    <p><i class="fa-solid fa-location-dot"></i> São Paulo - SP</p>
+
+                </div>
 
             </div>
 
-        </div>
+            <hr>
 
-        <!-- Institucional -->
+            <div class="pagamentos">
 
-        <div class="footer-col">
+                <h4>Formas de pagamento</h4>
 
-            <h3>Institucional</h3>
+                <div class="bandeiras">
 
-            <a href="#">Quem Somos</a>
+                    <i class="fa-brands fa-cc-visa"></i>
 
-            <a href="#">Nossas Lojas</a>
+                    <i class="fa-brands fa-cc-mastercard"></i>
 
-            <a href="#">Trabalhe Conosco</a>
+                    <i class="fa-brands fa-cc-paypal"></i>
 
-            <a href="#">Política de Privacidade</a>
+                    <i class="fa-brands fa-pix"></i>
 
-            <a href="#">Termos de Uso</a>
+                </div>
 
-        </div>
+            </div>
 
-        <!-- Atendimento -->
+            <div class="copyright">
 
-        <div class="footer-col">
+                © 2026 PetKing - Todos os direitos reservados.
 
-            <h3>Atendimento</h3>
+            </div>
 
-            <a href="#">Central de Ajuda</a>
-
-            <a href="#">Trocas e Devoluções</a>
-
-            <a href="#">Meus Pedidos</a>
-
-            <a href="#">Fale Conosco</a>
-
-            <a href="#">FAQ</a>
-
-        </div>
-
-        <!-- Contato -->
-
-        <div class="footer-col">
-
-            <h3>Contato</h3>
-
-            <p><i class="fa-solid fa-phone"></i> (11) 4002-8922</p>
-
-            <p><i class="fa-solid fa-envelope"></i> contato@petking.com</p>
-
-            <p><i class="fa-solid fa-location-dot"></i> São Paulo - SP</p>
-
-        </div>
-
-    </div>
-
-    <hr>
-
-    <div class="pagamentos">
-
-        <h4>Formas de pagamento</h4>
-
-        <div class="bandeiras">
-
-            <i class="fa-brands fa-cc-visa"></i>
-
-            <i class="fa-brands fa-cc-mastercard"></i>
-
-            <i class="fa-brands fa-cc-paypal"></i>
-
-            <i class="fa-brands fa-pix"></i>
-
-        </div>
-
-    </div>
-
-    <div class="copyright">
-
-        © 2026 PetKing - Todos os direitos reservados.
-
-    </div>
-
-</footer>
+        </footer>
 
     </footer>
 
